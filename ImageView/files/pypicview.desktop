@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Image Viewer
+Comment=Image Viewer with crop, resize feature
+Icon=insert-image
+Exec=pypicview %f
+NoDisplay=false
+Categories=Graphics;
+MimeType=image/jpeg;image/png;image/gif;image/svg+xml;image/bmp;image/x-xpixmap;
+StartupNotify=false
+Terminal=false

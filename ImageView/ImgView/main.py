@@ -13,12 +13,8 @@ from mainwindow import Ui_MainWindow
 from resize_dialog import Ui_ResizeDialog
 from photogrid import GridDialog
 import time
+import sys
 
-gloable_controls= None
-
-win = None
-
-status= None
 class Image(QLabel):
     ''' This is the image widget responsible for displaying image '''
     imageUpdated = pyqtSignal()
@@ -513,7 +509,7 @@ def image_module(message):
     elif "rotate left" in message:
         win.rotateLeft()
     elif "close" in message:
-        win.closeEvent()
+        sys.exit()
     elif "slide show start" in message:
         path ='C:/Users/Mohan/Pictures/2.jpg'
         if os.path.exists(path):
